@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+streamlit
+langchain
+langgraph
+langchain-groq
+langchain-community
+faiss-cpu
+sentence-transformers
+python-dotenv
+pydantic
+reportlab
+python-docx
+sqlite3
+requests
