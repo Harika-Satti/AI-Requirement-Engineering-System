@@ -11,5 +11,4 @@ python-dotenv
 pydantic
 reportlab
 python-docx
-sqlite3
 requests
