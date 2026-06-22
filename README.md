@@ -107,6 +107,32 @@ RAG Question Answering
 
 ---
 
+## Screenshots
+
+### FastAPI Backend
+![FastAPI 1](screenshots/fastapi1.png)
+![FastAPI 2](screenshots/fastapi2.png)
+![FastAPI 3](screenshots/fastapi3.png)
+![FastAPI 4](screenshots/fastapi4.png)
+![FastAPI 5](screenshots/fastapi5.png)
+![FastAPI 6](screenshots/fastapi6.png)
+
+### Project Running
+![Running Project](screenshots/running_project.png)
+
+### Streamlit Frontend
+
+# generate project
+![Streamlit 1](screenshots/streamlit1.png)
+![Streamlit 2](screenshots/streamlit2.png)
+
+# View project
+![Streamlit 3](screenshots/streamlit3.png)
+![Streamlit 4](screenshots/streamlit4.png)
+
+# Rag query AI
+![Streamlit 5](screenshots/streamlit5.png)
+
 ## 🚀 Installation
 
 ### Clone Repository
