@@ -1,83 +1,53 @@
-🚀 AI-Powered Requirement Engineering & Documentation Automation Platform
+# 🚀 AI-Powered Requirement Engineering & Documentation Automation Platform
 
-📌 Overview
-The AI-Powered Requirement Engineering & Documentation Automation Platform automates the software requirement engineering process using Generative AI and Multi-Agent Systems.
+## 📌 Overview
 
-The platform converts raw business requirements into structured software engineering artifacts such as:
+This project automates the Software Requirement Engineering process using Generative AI and Multi-Agent Systems.
 
-Requirement Analysis
-Ambiguity Detection Reports
-User Stories
-Use Cases
-Software Requirements Specification (SRS)
-PDF & DOCX Documentation
+The system transforms raw business requirements into structured software engineering artifacts such as:
 
-The system leverages LangGraph, LangChain, Groq LLMs, FastAPI, Streamlit, SQLite, and FAISS to automate requirement analysis and documentation generation.
+* Requirement Analysis
+* Ambiguity Detection Report
+* User Stories
+* Use Cases
+* Software Requirements Specification (SRS)
+* PDF & DOCX Documentation
 
-✨ Key Features
-Automated Requirement Analysis
-Ambiguity Detection
-User Story Generation
-Use Case Generation
-SRS Generation
-PDF Export
-DOCX Export
-RAG-based Question Answering
-Project Storage using SQLite
-Multi-Agent Workflow using LangGraph
-🛠️ Technology Stack
-Python
-FastAPI
-Streamlit
-LangChain
-LangGraph
-Groq (Llama 3)
-SQLite
-FAISS
-ReportLab
-python-docx
+The platform leverages LangGraph, LangChain, Groq LLM, FastAPI, Streamlit, SQLite, and FAISS to automate requirement analysis and documentation generation.
 
-🚀 How to Run
-Install Dependencies;
+---
 
-pip install -r requirements.txt
+## ✨ Features
 
-Configure Environment Variables;
+### Requirement Engineering
 
-Create a .env file:
+* Requirement Analysis
+* Ambiguity Detection
+* User Story Generation
+* Use Case Generation
+* SRS Generation
 
-GROQ_API_KEY=your_api_key
+### Documentation
 
-Start Backend;
+* PDF Export
+* DOCX Export
 
-uvicorn api.main --reload
+### AI Features
 
-Start Frontend;
+* Multi-Agent Workflow using LangGraph
+* Retrieval-Augmented Generation (RAG)
+* Project Knowledge Retrieval
 
-streamlit run streamlit_ui/app_ui.py
+### Storage
 
-📊 Outputs Generated
-Requirement Analysis
-Ambiguity Report
-User Stories
-Use Cases
-SRS Document
-PDF Export
-DOCX Export
+* SQLite Database
+* FAISS Vector Store
 
-🔮 Future Enhancements
-Authentication & Authorization
-Docker Containerization
-Cloud Deployment
-PostgreSQL Integration
-CI/CD Pipelines
-Requirement Versioning
-Multi-Language Support
-Collaborative Editing
+---
 
+## 🏗️ System Architecture
 
-🏗️ System Architecture
-
+```text
                  User
                    │
                    ▼
@@ -119,3 +89,100 @@ FAISS Vector Store
  ▼
 RAG Question Answering
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* FastAPI
+* Streamlit
+* LangChain
+* LangGraph
+* Groq LLM
+* SQLite
+* FAISS
+* ReportLab
+* python-docx
+
+---
+
+## 🚀 Installation
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd AI-Requirement-Engineering-System
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate Environment
+
+```bash
+venv\Scripts\activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configure Environment Variables
+
+Create a `.env` file:
+
+```env
+GROQ_API_KEY=your_api_key
+```
+
+---
+
+## ▶️ Run Application
+
+### Start FastAPI Backend
+
+```bash
+uvicorn api.main:app --reload
+```
+
+### Start Streamlit Frontend
+
+```bash
+streamlit run streamlit_ui/app_ui.py
+```
+
+---
+
+## 📊 Example Outputs
+
+* Requirement Analysis
+* Ambiguity Report
+* User Stories
+* Use Cases
+* Software Requirement Specification
+* PDF Documentation
+* DOCX Documentation
+
+---
+
+## 🔮 Future Enhancements
+
+* User Authentication
+* Role-Based Access Control
+* Docker Containerization
+* Cloud Deployment
+* PostgreSQL Integration
+* CI/CD Pipelines
+* Requirement Versioning
+* Multi-Language Support
+
+## 👩‍💻 Author
+
+Harika Satti
