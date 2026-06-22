@@ -1,16 +1,17 @@
 from langchain_community.vectorstores import FAISS
-
 from langchain_huggingface import HuggingFaceEmbeddings
-
 from langchain_groq import ChatGroq
 
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+def get_embeddings():
+    return HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
 
 
 def load_vector_db():
+
+    embeddings = get_embeddings()
 
     return FAISS.load_local(
         "faiss_index",
@@ -31,11 +32,9 @@ def search_documents(query):
     return results
 
 
-
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
     temperature=0
-
 )
 
 
@@ -48,14 +47,14 @@ def answer_query(query):
     )
 
     prompt = f"""
-    Answer the question using the context.
+Answer the question using the context.
 
-    Context:
-    {context}
+Context:
+{context}
 
-    Question:
-    {query}
-    """
+Question:
+{query}
+"""
 
     response = llm.invoke(prompt)
 
